@@ -1,1 +1,16 @@
+# 
+# 
+#
+0 x*** -> N 0   
+0 Nxxx -> E 0 
+0 NExx -> W 1
+1 **xx -> W 1   
+1 NxWx -> S 2
+2 xxWx -> E 2
+2 xxxx -> E 2
+2 xExx -> S 1
+1 xxWx -> S 2
+2 xExS -> x 2
+1 xExS -> W 1 
+1 xxxS -> W 1
 
