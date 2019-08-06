@@ -1,1 +1,35 @@
+#Need all directions, must eliminate redundant rules
+#Started with one of the horizontal directions (West)
 
+#If there is space to the West, move one space and
+#change to state 03
+
+0 **x* -> W 3
+
+#If there is a wall, stop and change to state 01
+
+0 **W* -> X 1
+
+#While in state 01, if there is is no South wall, move one #space and change to state 00
+
+1 ***x -> S 0
+
+#If South wall present, stop and change to state 02
+
+1 ***S -> X 2
+
+#If no East wall, move one space and change to state 01
+
+2 *x** -> E 1
+
+#If there is a East wall, stop and change to state 03
+
+2 *E** -> X 3
+
+#If there is no North wall, move one space and change to #state 02
+
+3 x*** -> N 2
+
+#If there is a North wall, stop and change to state 00
+
+3 N*** -> X 0
